@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, Search, ChevronDown } from 'lucide-react';
+import { Menu, Search, ChevronDown, Code } from 'lucide-react';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +16,9 @@ const NavBar = () => {
       <div className="container-custom">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold gradient-text">DataInsights</span>
+          <Link to="/" className="flex items-center space-x-2">
+            <Code className="h-6 w-6 text-av-purple" />
+            <span className="text-2xl font-bold gradient-text">JMyalla</span>
           </Link>
 
           {/* Desktop Navigation */}
