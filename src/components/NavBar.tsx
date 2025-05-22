@@ -18,7 +18,7 @@ const NavBar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <Code className="h-6 w-6 text-av-purple" />
-            <span className="text-2xl font-bold gradient-text">JMyalla</span>
+            <span className="text-2xl font-bold gradient-text">DataInsights</span>
           </Link>
 
           {/* Desktop Navigation */}
