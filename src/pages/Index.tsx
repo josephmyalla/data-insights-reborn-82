@@ -47,7 +47,7 @@ const Index = () => {
                 <h1 className="text-4xl sm:text-5xl font-bold ">AI Automation
               </h1>
               <p className="text-lg mb-8 text-gray-200 w-3/4">
-                Transform workflows across industries with intelligent AI agents. Easily build and deploy automated solutions using any LLM and cloud platform—scaling efficiency and innovation effortlessly.
+                Transform workflows across industries with intelligent AI agents. Easily build and deploy automated solutions using any AI Frameworks and any or multiple LLMs by  hosting on your infrastructure or on cloud platforms scaling efficiency and innovation effortlessly.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-white text-av-purple-dark hover:bg-gray-100">
@@ -100,7 +100,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
             <div>
               <h2 className="section-title mb-2">Available Courses</h2>
-              <p className="text-av-gray text-[22px]">Expert-led courses to advance your data skills</p>
+              <p className="text-av-gray text-[22px]">Expert-led courses to advance your AI skills</p>
             </div>
             <Link to="/courses" className="mt-4 md:mt-0 flex items-center text-av-purple font-medium hover:text-av-purple-dark transition-colors">
               View All Courses <ChevronRight className="h-4 w-4 ml-1" />

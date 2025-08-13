@@ -67,23 +67,16 @@ const Footer = () => {
         <hr className="my-8 border-gray-700" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center justify-center space-x-2">
-              <p className="text-gray-300 text-sm flex items-center space-x-2">
+          <div className="flex flex-col md:flex-row mx-auto items-center justify-center space-x-2">
+              <p className="text-gray-300 text-sm">
             &copy; {new Date().getFullYear()}
           </p>
         
             <Logo/>
           
-          <p className="text-gray-300 text-sm flex items-center space-x-2">
+          <p className="text-gray-300 text-sm">
             All rights reserved.
           </p>
-          </div>
-          <div className="mt-4 md:mt-0">
-            <ul className="flex space-x-6">
-              <li><Link to="/privacy" className="text-sm text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms" className="text-sm text-gray-300 hover:text-white transition-colors">Terms of Service</Link></li>
-              <li><Link to="/cookies" className="text-sm text-gray-300 hover:text-white transition-colors">Cookie Policy</Link></li>
-            </ul>
           </div>
         </div>
       </div>
