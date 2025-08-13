@@ -45,7 +45,7 @@ const CourseCard = ({ image, title, description, level, duration, price, instruc
       </CardContent>
       <CardFooter className="p-4 pt-0 flex flex-col space-y-3">
         <div className="flex items-center justify-between w-full">
-          <span className="text-sm text-av-gray">by {instructor}</span>
+          <span className="text-sm text-av-gray">{instructor}</span>
           <span className="font-bold text-av-blue">{price}</span>
         </div>
         <Button className="w-full bg-av-purple hover:bg-av-purple-dark">

@@ -2,7 +2,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, Search, ChevronDown, Code } from 'lucide-react';
+import { Menu, Search, ChevronDown } from 'lucide-react';
+import { Logo } from './Logo';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,12 +16,7 @@ const NavBar = () => {
     <nav className="bg-white shadow-sm py-4">
       <div className="container-custom">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <Code className="h-6 w-6 text-av-purple" />
-            <span className="text-2xl font-bold gradient-text">DataInsights</span>
-          </Link>
-
+         <Logo/>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <div className="flex space-x-6">

@@ -75,3 +75,16 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-av-purple to-purple-400;
   }
 }
+
+.hero-title{
+  @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-r from-red-600 to-blue-400 text-transparent bg-clip-text;
+}
+
+.section-title{
+  @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text;
+}
+.section-description {
+
+  @appl text-[22px];
+}
+

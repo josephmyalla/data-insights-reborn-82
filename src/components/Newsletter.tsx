@@ -23,7 +23,7 @@ const Newsletter = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-2">Subscribe to Our Newsletter</h2>
           <p className="text-gray-200 mb-8">
-            Stay updated with the latest trends, tutorials, and resources in data science and analytics.
+            Stay updated with the latest trends and resources in Artificial Intelligence.
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
             <Input

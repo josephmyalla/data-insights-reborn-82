@@ -1,5 +1,7 @@
 
 import { Link } from "react-router-dom";
+import { Logo } from './Logo';
+import {Contacts} from "./Contacts"
 
 const Footer = () => {
   return (
@@ -8,11 +10,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo and About */}
           <div className="lg:col-span-2">
-            <Link to="/" className="text-2xl font-bold mb-4 inline-block">
-              DataInsights
-            </Link>
+            <Logo/>
             <p className="text-gray-300 mt-2 mb-4 max-w-md">
-              A community of data science enthusiasts learning together. Our platform provides resources, courses, and expert guidance to help you master data science skills.
+              I am a versatile solution provider with a unique blend of skills in engineering, software development, and AI-driven business analysis. I design innovative solutions that optimize performance, automate processes, and extract actionable insights for data-driven decision-making. I leveraging AI to solve complex business challenges.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -52,42 +52,34 @@ const Footer = () => {
           
           {/* Topics */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Topics</h3>
+            <h3 className="text-lg font-semibold mb-4">Tranings</h3>
             <ul className="space-y-2">
-              <li><Link to="/topics/data-science" className="text-gray-300 hover:text-white transition-colors">Data Science</Link></li>
-              <li><Link to="/topics/machine-learning" className="text-gray-300 hover:text-white transition-colors">Machine Learning</Link></li>
-              <li><Link to="/topics/deep-learning" className="text-gray-300 hover:text-white transition-colors">Deep Learning</Link></li>
-              <li><Link to="/topics/visualization" className="text-gray-300 hover:text-white transition-colors">Data Visualization</Link></li>
+              <li><Link to="/topics/data-science" className="text-gray-300 hover:text-white transition-colors">Generative AI</Link></li>
+              <li><Link to="/topics/machine-learning" className="text-gray-300 hover:text-white transition-colors">Retrieval Augemented Generaton</Link></li>
+              <li><Link to="/topics/deep-learning" className="text-gray-300 hover:text-white transition-colors">LLM Finetunning</Link></li>
+              <li><Link to="/topics/visualization" className="text-gray-300 hover:text-white transition-colors">AI Agents and Agentic AI</Link></li>
               <li><Link to="/topics/python" className="text-gray-300 hover:text-white transition-colors">Python</Link></li>
             </ul>
           </div>
           
           {/* Contact */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2">
-              <li className="text-gray-300">
-                <span className="block">Email:</span>
-                <a href="mailto:info@datainsights.com" className="hover:text-white transition-colors">info@datainsights.com</a>
-              </li>
-              <li className="text-gray-300">
-                <span className="block">Phone:</span>
-                <a href="tel:+1234567890" className="hover:text-white transition-colors">+1 (234) 567-890</a>
-              </li>
-              <li className="text-gray-300">
-                <span className="block">Address:</span>
-                <span>123 Data Street, Analytics City, 10001</span>
-              </li>
-            </ul>
-          </div>
+          <Contacts />
         </div>
         
         <hr className="my-8 border-gray-700" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 text-sm">
-            &copy; {new Date().getFullYear()} DataInsights. All rights reserved.
+          <div className="flex items-center justify-center space-x-2">
+              <p className="text-gray-300 text-sm flex items-center space-x-2">
+            &copy; {new Date().getFullYear()}
           </p>
+        
+            <Logo/>
+          
+          <p className="text-gray-300 text-sm flex items-center space-x-2">
+            All rights reserved.
+          </p>
+          </div>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">
               <li><Link to="/privacy" className="text-sm text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
