@@ -26,9 +26,9 @@ const NavBar = () => {
                   Courses <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg p-2 hidden group-hover:block z-10">
-                  <Link to="/courses/data-science" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Data Science</Link>
+                  <Link to="/courses/data-science" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Programming Fundamentals</Link>
                   <Link to="/courses/machine-learning" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Machine Learning</Link>
-                  <Link to="/courses/deep-learning" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Deep Learning</Link>
+                  <Link to="/courses/deep-learning" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Generative AI & AI Agents</Link>
                 </div>
               </div>
               <div className="relative group">
@@ -38,11 +38,8 @@ const NavBar = () => {
                 <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg p-2 hidden group-hover:block z-10">
                   <Link to="/resources/blogs" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Blogs</Link>
                   <Link to="/resources/tutorials" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Tutorials</Link>
-                  <Link to="/resources/webinars" className="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Webinars</Link>
                 </div>
               </div>
-              <Link to="/community" className="nav-link">Community</Link>
-              <Link to="/about" className="nav-link">About</Link>
             </div>
             
             <div className="flex items-center space-x-4">
