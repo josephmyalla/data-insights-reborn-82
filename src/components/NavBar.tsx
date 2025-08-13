@@ -75,9 +75,9 @@ const NavBar = () => {
                 Courses <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               <div className="pl-4 mt-1 space-y-1">
-                <Link to="/courses/data-science" className="block py-1 text-sm text-av-gray hover:text-av-blue">Data Science</Link>
+                <Link to="/courses/data-science" className="block py-1 text-sm text-av-gray hover:text-av-blue">Programming Basics</Link>
                 <Link to="/courses/machine-learning" className="block py-1 text-sm text-av-gray hover:text-av-blue">Machine Learning</Link>
-                <Link to="/courses/deep-learning" className="block py-1 text-sm text-av-gray hover:text-av-blue">Deep Learning</Link>
+                <Link to="/courses/deep-learning" className="block py-1 text-sm text-av-gray hover:text-av-blue">Generative AI & AI Agents</Link>
               </div>
             </div>
             <div className="py-2">
@@ -86,12 +86,8 @@ const NavBar = () => {
               </button>
               <div className="pl-4 mt-1 space-y-1">
                 <Link to="/resources/blogs" className="block py-1 text-sm text-av-gray hover:text-av-blue">Blogs</Link>
-                <Link to="/resources/tutorials" className="block py-1 text-sm text-av-gray hover:text-av-blue">Tutorials</Link>
-                <Link to="/resources/webinars" className="block py-1 text-sm text-av-gray hover:text-av-blue">Webinars</Link>
-              </div>
+                <Link to="/resources/tutorials" className="block py-1 text-sm text-av-gray hover:text-av-blue">Tutorials</Link>              </div>
             </div>
-            <Link to="/community" className="block py-2 nav-link">Community</Link>
-            <Link to="/about" className="block py-2 nav-link">About</Link>
             <div className="pt-2 flex flex-col space-y-2">
               <Button variant="outline" className="border-av-purple text-av-purple hover:bg-av-purple hover:text-white">
                 Sign In
