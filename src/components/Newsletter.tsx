@@ -21,9 +21,9 @@ const Newsletter = () => {
     <section className="bg-av-purple-dark text-white py-16">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-2">Subscribe to Our Newsletter</h2>
+          <h2 className="text-3xl font-bold mb-2">Subscribe to my Newsletter</h2>
           <p className="text-gray-200 mb-8">
-            Stay updated with the latest trends and resources in Artificial Intelligence.
+            Stay updated with the latest informations, trends and resources in Artificial Intelligence.
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
             <Input
@@ -38,7 +38,7 @@ const Newsletter = () => {
             </Button>
           </form>
           <p className="text-xs text-gray-300 mt-4">
-            By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.
+            By subscribing, you agree to my Privacy Policy and consent to receive updates from me.
           </p>
         </div>
       </div>

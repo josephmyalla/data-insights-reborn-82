@@ -99,7 +99,7 @@ const Index = () => {
         <div className="container-custom">
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
             <div>
-              <h2 className="section-title mb-2">Featured Courses</h2>
+              <h2 className="section-title mb-2">Available Courses</h2>
               <p className="text-av-gray text-[22px]">Expert-led courses to advance your data skills</p>
             </div>
             <Link to="/courses" className="mt-4 md:mt-0 flex items-center text-av-purple font-medium hover:text-av-purple-dark transition-colors">
@@ -125,7 +125,9 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-av-blue text-white">
+      {
+        false && (
+          <section className="py-20 bg-av-blue text-white">
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 
@@ -145,6 +147,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+        )
+      }
 
       {/* Latest Articles Section */}
       <section className="py-20">
@@ -152,7 +156,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
             <div>
               <h2 className="section-title mb-2">Latest Articles</h2>
-              <p className="text-av-gray text-[22px]">Fresh insights and tutorials from our experts</p>
+              <p className="text-av-gray text-[22px]">Fresh insights and tutorials to keep in pace with AI trends</p>
             </div>
             <Link to="/blog" className="mt-4 md:mt-0 flex items-center text-av-purple font-medium hover:text-av-purple-dark transition-colors">
               View All Articles <ChevronRight className="h-4 w-4 ml-1" />
@@ -194,7 +198,7 @@ const Index = () => {
           </div>
           <div className="flex justify-center">
             <Button size="lg" className="bg-white text-av-purple-dark hover:bg-gray-100">
-              Contact Us
+              Get in Touch
             </Button>
           </div>
         </div>
