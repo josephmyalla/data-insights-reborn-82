@@ -7,6 +7,12 @@
 
 @layer base {
   :root {
+
+     /* Core Background Gradients */
+    --gradient-primary: linear-gradient(90deg, hsl(220, 13%, 18%) 0%, hsl(270, 50%, 25%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(220, 13%, 18%) 0%, hsl(270, 30%, 20%) 100%);
+    --gradient-accent: linear-gradient(45deg, hsl(200, 100%, 70%) 0%, hsl(220, 100%, 75%) 100%);
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -59,6 +65,31 @@
 }
 
 @layer components {
+
+
+   /* Main Background */
+  .bg-dashboard {
+    background: var(--background);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Floating Objects */
+  .floating-object {
+    position: absolute;
+    background: var(--gradient-accent);
+    border-radius: 50%;
+    filter: blur(1px);
+    opacity: 0.6;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .floating-object:nth-child(1) { width: 60px; height: 60px; top: 10%; left: 5%; animation-delay: 0s; }
+  .floating-object:nth-child(2) { width: 40px; height: 40px; top: 20%; right: 10%; animation-delay: 2s; }
+  .floating-object:nth-child(3) { width: 80px; height: 80px; bottom: 15%; left: 15%; animation-delay: 4s; }
+  .floating-object:nth-child(4) { width: 50px; height: 50px; top: 60%; right: 20%; animation-delay: 1s; }
+  .floating-object:nth-child(5) { width: 35px; height: 35px; top: 70%; left: 60%; animation-delay: 3s; }
+
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
   }
@@ -81,10 +112,58 @@
 }
 
 .section-title{
-  @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text;
+  @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-white to-[#001E80] text-transparent bg-clip-text;
+}
+
+.newsletter-title{
+   @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-r from-red-700 to-yellow-500 text-transparent bg-clip-text;
 }
 .section-description {
 
   @appl text-[22px];
+}
+
+
+@layer utilities {
+  /* Animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .animate-slide-in {
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  .animate-delay-100 { animation-delay: 0.1s; }
+  .animate-delay-200 { animation-delay: 0.2s; }
+  .animate-delay-300 { animation-delay: 0.3s; }
+  .animate-delay-400 { animation-delay: 0.4s; }
 }
 

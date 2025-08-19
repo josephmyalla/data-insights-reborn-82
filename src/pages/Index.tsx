@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import MyLayout from "@/components/CustomLayout"
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import ArticleCard from "@/components/ArticleCard";
@@ -29,14 +30,13 @@ const DynamicIcon = ({ name, size = 32 }) => {
 };
 
 const Index = () => {
-  
-  
+ 
   return (
-    <>
+    <MyLayout>
       <NavBar />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-av-blue to-av-purple-dark text-white py-20">
+      <section className="text-white py-20">
         <div className="container">
           <div className="flex items-center justify-center">
             <div className="animate-fade-in text-center flex flex-col items-center gap-8" style={{ animationDelay: "0.2s" }}>
@@ -95,10 +95,10 @@ const Index = () => {
       </section>
 
       {/* Featured Courses Section */}
-      <section className="py-20 bg-av-gray-light">
+      <section className="py-20">
         <div className="container-custom">
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
-            <div>
+             <div className="flex flex-col items-start">
               <h2 className="section-title mb-2">Available Courses</h2>
               <p className="text-av-gray text-[22px]">Expert-led courses to advance your AI skills</p>
             </div>
@@ -154,11 +154,11 @@ const Index = () => {
       <section className="py-20">
         <div className="container-custom">
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
-            <div>
+            <div className="flex flex-col items-start">
               <h2 className="section-title mb-2">Latest Articles</h2>
-              <p className="text-av-gray text-[22px]">Fresh insights and tutorials to keep in pace with AI trends</p>
+              <p className="text-av-gray text-[22px]">Fresh insights and tutorials to keep you in pace with AI trends</p>
             </div>
-            <Link to="/blog" className="mt-4 md:mt-0 flex items-center text-av-purple font-medium hover:text-av-purple-dark transition-colors">
+            <Link to="/articles" className="mt-4 md:mt-0 flex items-center text-av-purple font-medium hover:text-av-purple-dark transition-colors">
               View All Articles <ChevronRight className="h-4 w-4 ml-1" />
             </Link>
           </div>
@@ -191,7 +191,7 @@ const Index = () => {
       <section className="py-16 bg-gradient-to-r from-av-purple to-av-purple-dark text-white">
         <div className="container-custom">
           <div className="text-center mb-8">
-            <h2 className="section-title mb-4">Ready to engage AI in Your Business?</h2>
+            <h2 className="newsletter-title mb-4">Ready to engage AI in Your Business?</h2>
             <p className="text-xl max-w-2xl mx-auto text-gray-200">
               Join our community utilising AI to 10X your business.
             </p>
@@ -209,7 +209,7 @@ const Index = () => {
       
       {/* Footer */}
       <Footer />
-    </>
+    </MyLayout>
   );
 };
 

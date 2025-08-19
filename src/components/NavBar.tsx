@@ -13,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-sm py-4">
+    <nav className="shadow-sm py-4">
       <div className="container-custom">
         <div className="flex justify-between items-center">
          <Logo/>
@@ -43,14 +43,8 @@ const NavBar = () => {
             </div>
             
             <div className="flex items-center space-x-4">
-              <button className="text-av-gray hover:text-av-blue">
-                <Search className="h-5 w-5" />
-              </button>
-              <Button variant="outline" className="border-av-purple text-av-purple hover:bg-av-purple hover:text-white">
-                Sign In
-              </Button>
-              <Button className="bg-av-purple hover:bg-av-purple-dark text-white">
-                Sign Up
+               <Button variant="outline" className="border-av-purple text-av-purple hover:bg-av-purple hover:text-white">
+               Login/Register
               </Button>
             </div>
           </div>

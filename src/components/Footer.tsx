@@ -5,7 +5,7 @@ import {Contacts} from "./Contacts"
 
 const Footer = () => {
   return (
-    <footer className="bg-av-blue text-white pt-12 pb-8">
+    <footer className="text-white pt-12 pb-8">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo and About */}

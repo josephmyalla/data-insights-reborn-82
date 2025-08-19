@@ -4,7 +4,7 @@ const colors =["hover:bg-av-purple","hover:bg-av-pink","hover:bg-av-blue","hover
 let randnumber = Math.floor(Math.random() * 7);
 const Technologies =()=>{
     return(
-        <section className="py-20 bg-av-gray-light">
+        <section className="py-20">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="section-title mb-4">Technologies I can offer solutions with</h2>
