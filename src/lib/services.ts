@@ -10,7 +10,7 @@ export const Servces = [
   },
   {
     "title": "Generative AI",
-    "description": "Generate Images, graphics about your business for marketing and campaign.",
+    "description": "Generate, text, images, vidoes , graphics about your business for marketing and campaign.",
     "icon": "BarChart",
     "iconSize": 32,
     "url": "/topics/machine-learning",
@@ -18,7 +18,7 @@ export const Servces = [
   },
   {
     "title": "Retrieval Augmented Generation",
-    "description": "Enhance monitoring, evaluation and reporting by fetching relevant information from your company documents and from external approved sources",
+    "description": "Improve the response of an llm by encorporating knowledge from your company data. You can get useful solutions for analysis, monitoring & evaluation.",
     "icon": "BookOpen",
     "iconSize": 32,
     "url": "/topics/deep-learning",
@@ -26,7 +26,7 @@ export const Servces = [
   },
   {
     "title": "AI Agents and Agentic AI",
-    "description": "Let AI agents do analysis, generate reports for marketing, compliance, sales and Legal.",
+    "description": "Empower Large language models by building AI agents capable of reasoning, iterating and taking actions autonomously by enabling tool calling and multiple services access using MCPs.",
     "icon": "Code",
     "iconSize": 32,
     "url": "/topics/programming",
