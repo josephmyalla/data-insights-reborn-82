@@ -11,7 +11,7 @@ const Technologies =()=>{
             <p className="text-av-gray max-w-2xl mx-auto text-[22px]">
               With over 20 years in tech, teaching, networking, software development in different entities, I have learned a number of stacks, and still learning.
             </p>
-            <p className="text-sm text-gray-300 p-4 w-2/3 mx-auto">Aferall Operating Systems, files systems,  programming languages, databases share or use the same building blocks. So switching from one to another is matter of curiosity, resource and time availability</p>
+            <p className="text-sm text-gray-300 p-4 w-2/3 mx-auto">Afterall Operating Systems, files systems,  programming languages, databases share or use the same building blocks. So switching from one to another is matter of curiosity, resource and time availability</p>
           </div>
           
           <div className="flex flex-wrap gap-3 justify-center max-w-4xl mx-auto">

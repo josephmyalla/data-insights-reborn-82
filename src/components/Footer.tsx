@@ -50,7 +50,7 @@ const Footer = () => {
           
           {/* Topics */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Tranings</h3>
+            <h3 className="text-lg font-semibold mb-4">Trainings</h3>
             <ul className="space-y-2">
               <li><Link to="/topics/data-science" className="text-gray-300 hover:text-white transition-colors">Generative AI</Link></li>
               <li><Link to="/topics/machine-learning" className="text-gray-300 hover:text-white transition-colors">Retrieval Augemented Generaton</Link></li>
