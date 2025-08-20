@@ -1,7 +1,8 @@
 export const Servces = [
   {
     "title": "Finetuning LLM",
-    "description": "Teach the Large Language Model to speak your business. Generate documents, answer customers queries consistently by having your company information in your own Model.",
+    "description": `Large language models are great for most of the general tasks, You can make them much better by training them
+     on domain specific data like healthcare, finance or legal matters.`,
     "icon": "Database",
     "iconSize": 32,
     "url": "/topics/data-science",
